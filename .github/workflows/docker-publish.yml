@@ -35,7 +35,6 @@ jobs:
           images: chenjia404/tor-proxy
           tags: |
             type=raw,value=latest
-            type=schedule,pattern={{date 'YYYY.MM'}}
 
       - name: Build and push image
         uses: docker/build-push-action@v6

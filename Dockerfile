@@ -1,4 +1,4 @@
-FROM alpine:3.23
+FROM alpine:3
 
 LABEL maintainer="OpenAI Codex"
 LABEL name="tor-proxy"
