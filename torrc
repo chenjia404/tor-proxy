@@ -1,0 +1,18 @@
+HardwareAccel 1
+Log notice stdout
+
+DataDirectory /var/lib/tor
+
+DNSPort 0.0.0.0:8853
+SocksPort 0.0.0.0:9150
+
+# Enable a non-exit relay by default.
+Nickname torproxy
+ContactInfo torproxy.invalid
+ORPort 0.0.0.0:9001
+ExitRelay 0
+PublishServerDescriptor 1
+
+# Keep resource usage predictable in container environments.
+RelayBandwidthRate 5 MB
+RelayBandwidthBurst 10 MB
