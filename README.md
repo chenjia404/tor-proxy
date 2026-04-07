@@ -22,19 +22,18 @@ Default behavior:
 ## Start
 
 ```bash
-docker build -t tor-proxy .
 docker run -d --restart=always --name tor-proxy \
   -p 127.0.0.1:8118:8118/tcp \
   -p 127.0.0.1:9150:9150/tcp \
   -p 127.0.0.1:8853:8853/udp \
   -p 9001:9001/tcp \
-  tor-proxy
+  chenjia404/tor-proxy:latest
 ```
 
 Or:
 
 ```bash
-docker compose up -d --build
+docker compose up -d
 ```
 
 ## Automated builds

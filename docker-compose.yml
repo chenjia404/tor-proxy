@@ -3,7 +3,7 @@ version: "3.8"
 services:
   tor-proxy:
     container_name: tor-proxy
-    build: .
+    image: chenjia404/tor-proxy:latest
     ports:
       - "127.0.0.1:8118:8118/tcp"
       - "127.0.0.1:8853:8853/udp"
