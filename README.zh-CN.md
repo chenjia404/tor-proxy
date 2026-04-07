@@ -36,6 +36,12 @@ docker run -d --restart=always --name tor-proxy \
 docker compose up -d
 ```
 
+默认本地可用代理地址：
+
+- HTTP：`http://127.0.0.1:8118`
+- SOCKS5：`socks5://127.0.0.1:9150`
+- DNS over Tor：`127.0.0.1:8853/udp`
+
 ## 自动构建
 
 项目已包含一个 GitHub Actions 工作流，会每个月自动重新构建并推送 `chenjia404/tor-proxy`。

@@ -36,6 +36,12 @@ Or:
 docker compose up -d
 ```
 
+Default local proxy endpoints:
+
+- HTTP: `http://127.0.0.1:8118`
+- SOCKS5: `socks5://127.0.0.1:9150`
+- DNS over Tor: `127.0.0.1:8853/udp`
+
 ## Automated builds
 
 GitHub Actions includes a monthly scheduled build that rebuilds and pushes `chenjia404/tor-proxy`.
